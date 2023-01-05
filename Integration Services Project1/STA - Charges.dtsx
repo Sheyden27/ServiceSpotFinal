@@ -11,15 +11,15 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{86911158-7A22-4E67-BFDF-61034A791EB2}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{693B2CF7-18C6-4C17-925B-C451F531C52F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{88CAC214-8A91-4CD9-A6DE-FE9A720EF6F5}"
+      DTS:DTSID="{CC98E719-4E57-4F83-8001-FC837A390EED}"
       DTS:ObjectName="Flat File Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -39,7 +39,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Call Type "
-              DTS:DTSID="{F2706D4E-7DC5-4A6B-8F33-D5704FF61619}"
+              DTS:DTSID="{BB8C1A1B-A217-4FD1-A8C5-38846EAD005C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Call Charges (2018)"
-              DTS:DTSID="{6EEEB4B0-1039-45C4-A80A-DB5E22887B60}"
+              DTS:DTSID="{5C3380C8-B84F-49DA-A65C-814ED2033E5D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,25 +57,16 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Call Charges (2019)"
-              DTS:DTSID="{074A1630-D126-4057-908C-15E48604C16E}"
+              DTS:DTSID="{145E6555-C003-4F8C-9FA0-691CFF4548B9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x000D__x000A_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Call Charges (2020)"
-              DTS:DTSID="{78C8F716-994E-41F2-A503-D74248B0F8FC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Call Charges (2021)"
-              DTS:DTSID="{3DFA9DB7-2761-49B8-9102-A46F8CE0848C}"
+              DTS:DTSID="{6E716CAC-E842-4F33-B34F-D74943B8D42C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -217,28 +208,6 @@
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
-                    <outputColumn
-                      refId="Package\DFT - Charges\FF_SRC - STA Charges.Outputs[Sortie de source de fichier plat].Columns[Call Charges (2021)]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Charges\FF_SRC - STA Charges.Outputs[Sortie de source de fichier plat].ExternalColumns[Call Charges (2021)]"
-                      length="50"
-                      lineageId="Package\DFT - Charges\FF_SRC - STA Charges.Outputs[Sortie de source de fichier plat].Columns[Call Charges (2021)]"
-                      name="Call Charges (2021)"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indique si les données sont au format binaire."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -266,12 +235,6 @@
                       dataType="str"
                       length="50"
                       name="Call Charges (2020)" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Charges\FF_SRC - STA Charges.Outputs[Sortie de source de fichier plat].ExternalColumns[Call Charges (2021)]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Call Charges (2021)" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -319,7 +282,7 @@
                 <property
                   dataType="System.String"
                   description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
-                  name="OpenRowset">[Charges]</property>
+                  name="OpenRowset">[dbo].[Charges]</property>
                 <property
                   dataType="System.String"
                   description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
@@ -407,14 +370,6 @@
                       cachedName="Call Charges (2020)"
                       externalMetadataColumnId="Package\DFT - Charges\OLE_DST - Load Data STA Charges.Inputs[Entrée de destination OLE DB].ExternalColumns[Call Charges (2020)]"
                       lineageId="Package\DFT - Charges\FF_SRC - STA Charges.Outputs[Sortie de source de fichier plat].Columns[Call Charges (2020)]" />
-                    <inputColumn
-                      refId="Package\DFT - Charges\OLE_DST - Load Data STA Charges.Inputs[Entrée de destination OLE DB].Columns[Call Charges (2021)]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Call Charges (2021)"
-                      externalMetadataColumnId="Package\DFT - Charges\OLE_DST - Load Data STA Charges.Inputs[Entrée de destination OLE DB].ExternalColumns[Call Charges (2021)]"
-                      lineageId="Package\DFT - Charges\FF_SRC - STA Charges.Outputs[Sortie de source de fichier plat].Columns[Call Charges (2021)]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -442,12 +397,6 @@
                       dataType="str"
                       length="50"
                       name="Call Charges (2020)" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Charges\OLE_DST - Load Data STA Charges.Inputs[Entrée de destination OLE DB].ExternalColumns[Call Charges (2021)]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Call Charges (2021)" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -572,21 +521,21 @@
         <NodeLayout
           Size="197,42"
           Id="Package\DFT - Charges\FF_SRC - STA Charges"
-          TopLeft="418,140" />
+          TopLeft="426,149" />
         <EdgeLayout
           Id="Package\DFT - Charges.Paths[Sortie de source de fichier plat]"
-          TopLeft="518.25,182">
+          TopLeft="522.25,191">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,93"
+              EndConnector="0,84"
               Start="0,0"
-              End="0,85.5">
+              End="0,76.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,85.5" />
+                    End="0,76.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
