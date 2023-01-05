@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{AF00FF7E-F977-4F70-82B4-AB83F0F738E6}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{345FF389-8CE4-47D9-8BE9-432297A3F2BD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -31,7 +31,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{56DAEBC6-D534-47BF-BD9F-C852A4A5BFD7}"
+      DTS:DTSID="{E5430526-25AA-49CC-BE10-C4ADC5AAE945}"
       DTS:ObjectName="Flat File Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -42,43 +42,43 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\Users\Dash\Hexagone IT 3\BI ETL\proproprojeject\Data\Lookup data.csv">
+          DTS:ConnectionString="D:\Users\Dash\Hexagone IT 3\BI ETL\proproprojeject\Data\Emp.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x003B_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="EmployeeID"
-              DTS:DTSID="{AC842861-B90F-4DA2-A969-674246B57826}"
+              DTS:DTSID="{ADFA22A4-D966-4509-A9CA-489853B4C872}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x003B_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="EmployeeName"
-              DTS:DTSID="{8892FFC1-49C3-4368-8CEA-4A642FA4A700}"
+              DTS:DTSID="{FE1C3944-DFC9-49A8-9D24-A85974A3B769}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x003B_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Site"
-              DTS:DTSID="{B57DEAFA-125F-4B5F-BC4A-7E4F028493E8}"
+              DTS:DTSID="{833BEDC2-2C01-4113-8095-D10B96BEE8EA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000A_"
+              DTS:ColumnDelimiter="_x000D__x000A_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ManagerName"
-              DTS:DTSID="{523C4A64-7848-47D2-B798-7CB5CB9CE1E2}"
+              DTS:DTSID="{8D7740B0-D351-4A85-A13E-F34FCFE749C5}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
