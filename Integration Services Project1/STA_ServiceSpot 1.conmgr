@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="STA_ServiceSpot 1"
+  DTS:DTSID="{6877F1C3-8791-4702-8EA5-7AEA879672AD}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=STA_ServiceSpot;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{6877F1C3-8791-4702-8EA5-7AEA879672AD}.\SQLEXPRESS.STA_ServiceSpot;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
