@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{345FF389-8CE4-47D9-8BE9-432297A3F2BD}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{E41DBEA5-DB43-43C1-8632-F08A57ACAD76}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -294,7 +294,7 @@
                 <property
                   dataType="System.String"
                   description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
-                  name="OpenRowset">[dbo].[Employees]</property>
+                  name="OpenRowset">[Employees]</property>
                 <property
                   dataType="System.String"
                   description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
@@ -389,25 +389,25 @@
                       refId="Package\DFT - STA Employees\OLE_DST - Load Data STA Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[EmployeeID]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="255"
                       name="EmployeeID" />
                     <externalMetadataColumn
                       refId="Package\DFT - STA Employees\OLE_DST - Load Data STA Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[EmployeeName]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="255"
                       name="EmployeeName" />
                     <externalMetadataColumn
                       refId="Package\DFT - STA Employees\OLE_DST - Load Data STA Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[Site]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="255"
                       name="Site" />
                     <externalMetadataColumn
                       refId="Package\DFT - STA Employees\OLE_DST - Load Data STA Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[ManagerName]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="255"
                       name="ManagerName" />
                   </externalMetadataColumns>
                 </input>
