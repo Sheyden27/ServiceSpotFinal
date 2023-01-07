@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="98"
-  DTS:VersionGUID="{055149F3-5630-4568-AEC2-9AC57C32CCB4}">
+  DTS:VersionBuild="103"
+  DTS:VersionGUID="{B0BC5281-A9B8-4F86-8F63-576870BB765D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -40,11 +40,12 @@
               version="1">
               <inputs>
                 <input
-                  refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Unir tout entrée 1]"
-                  name="Unir tout entrée 1">
+                  refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 2]"
+                  hasSideEffects="true"
+                  name="Entrée Union All 2">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Unir tout entrée 1].Columns[EmployeeID]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 2].Columns[EmployeeID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -59,7 +60,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Unir tout entrée 1].Columns[EmployeeName]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 2].Columns[EmployeeName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -74,7 +75,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Unir tout entrée 1].Columns[Site]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 2].Columns[Site]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -89,7 +90,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Unir tout entrée 1].Columns[ManagerName]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 2].Columns[ManagerName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -104,7 +105,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Unir tout entrée 1].Columns[FirstName]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 2].Columns[FirstName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -119,7 +120,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Unir tout entrée 1].Columns[LastName]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 2].Columns[LastName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -134,7 +135,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Unir tout entrée 1].Columns[State]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 2].Columns[State]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -149,7 +150,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Unir tout entrée 1].Columns[City]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 2].Columns[City]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -164,22 +165,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Unir tout entrée 1].Columns[Name]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="255"
-                      cachedName="Name"
-                      lineageId="Package\DFT - Load ODS Employees\LKP - Bind State with StateName &amp; Region.Outputs[Sortie de recherche avec correspondance].Columns[Name]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="ID de traçabilité de colonne de sortie"
-                          name="OutputColumnLineageID">#{Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[Name]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Unir tout entrée 1].Columns[Region]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 2].Columns[Region]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -193,16 +179,31 @@
                           name="OutputColumnLineageID">#{Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[Region]}</property>
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 2].Columns[StateName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="StateName"
+                      lineageId="Package\DFT - Load ODS Employees\LKP - Bind State with StateName &amp; Region.Outputs[Sortie de recherche avec correspondance].Columns[StateName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="ID de traçabilité de colonne de sortie"
+                          name="OutputColumnLineageID">#{Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[StateName]}</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
                 <input
-                  refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 1]"
+                  refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 3]"
                   hasSideEffects="true"
-                  name="Entrée Union All 1">
+                  name="Entrée Union All 3">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 1].Columns[EmployeeID]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 3].Columns[EmployeeID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -217,7 +218,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 1].Columns[EmployeeName]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 3].Columns[EmployeeName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -232,7 +233,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 1].Columns[Site]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 3].Columns[Site]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -247,7 +248,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 1].Columns[ManagerName]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 3].Columns[ManagerName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -262,7 +263,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 1].Columns[FirstName]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 3].Columns[FirstName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -277,7 +278,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 1].Columns[LastName]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 3].Columns[LastName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -292,7 +293,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 1].Columns[State]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 3].Columns[State]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -307,7 +308,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 1].Columns[City]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 3].Columns[City]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -322,22 +323,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 1].Columns[Name]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="45"
-                      cachedName="Name"
-                      lineageId="Package\DFT - Load ODS Employees\DER - Error StateCODE.Outputs[Sortie de colonne dérivée].Columns[Name]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="ID de traçabilité de colonne de sortie"
-                          name="OutputColumnLineageID">#{Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[Name]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 1].Columns[Region]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 3].Columns[Region]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="45"
@@ -351,14 +337,29 @@
                           name="OutputColumnLineageID">#{Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[Region]}</property>
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 3].Columns[StateName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="45"
+                      cachedName="StateName"
+                      lineageId="Package\DFT - Load ODS Employees\DER - Error StateCODE.Outputs[Sortie de colonne dérivée].Columns[StateName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="ID de traçabilité de colonne de sortie"
+                          name="OutputColumnLineageID">#{Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[StateName]}</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
                 <input
-                  refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 2]"
+                  refId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 1]"
                   dangling="true"
                   hasSideEffects="true"
-                  name="Entrée Union All 2">
+                  name="Entrée Union All 1">
                   <externalMetadataColumns />
                 </input>
               </inputs>
@@ -424,12 +425,12 @@
                       lineageId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[City]"
                       name="City" />
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[Name]"
+                      refId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[StateName]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      lineageId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[Name]"
-                      name="Name" />
+                      lineageId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[StateName]"
+                      name="StateName" />
                     <outputColumn
                       refId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[Region]"
                       codePage="1252"
@@ -443,75 +444,75 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load ODS Employees\DCVN - Resizing"
+              refId="Package\DFT - Load ODS Employees\DCNV - Resizing"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Conversion de données;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;0"
               description="Conversion de données"
-              name="DCVN - Resizing"
+              name="DCNV - Resizing"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Inputs[Entrée de conversion de données]"
+                  refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Inputs[Entrée de conversion de données]"
                   name="Entrée de conversion de données">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Inputs[Entrée de conversion de données].Columns[EmployeeID]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Inputs[Entrée de conversion de données].Columns[EmployeeID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="EmployeeID"
                       lineageId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[EmployeeID]" />
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Inputs[Entrée de conversion de données].Columns[Site]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Inputs[Entrée de conversion de données].Columns[Site]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Site"
                       lineageId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[Site]" />
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Inputs[Entrée de conversion de données].Columns[ManagerName]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Inputs[Entrée de conversion de données].Columns[ManagerName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="ManagerName"
                       lineageId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[ManagerName]" />
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Inputs[Entrée de conversion de données].Columns[State]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Inputs[Entrée de conversion de données].Columns[State]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="State"
                       lineageId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[State]" />
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Inputs[Entrée de conversion de données].Columns[City]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Inputs[Entrée de conversion de données].Columns[City]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="City"
                       lineageId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[City]" />
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Inputs[Entrée de conversion de données].Columns[Name]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Inputs[Entrée de conversion de données].Columns[StateName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
-                      cachedName="Name"
-                      lineageId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[Name]" />
+                      cachedName="StateName"
+                      lineageId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[StateName]" />
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Inputs[Entrée de conversion de données].Columns[Region]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Inputs[Entrée de conversion de données].Columns[Region]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Region"
                       lineageId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[Region]" />
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Inputs[Entrée de conversion de données].Columns[FirstName]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Inputs[Entrée de conversion de données].Columns[FirstName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="FirstName"
                       lineageId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[FirstName]" />
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Inputs[Entrée de conversion de données].Columns[LastName]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Inputs[Entrée de conversion de données].Columns[LastName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -523,19 +524,19 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données]"
+                  refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données]"
                   exclusionGroup="1"
                   name="Sortie de conversion de données"
-                  synchronousInputId="Package\DFT - Load ODS Employees\DCVN - Resizing.Inputs[Entrée de conversion de données]">
+                  synchronousInputId="Package\DFT - Load ODS Employees\DCNV - Resizing.Inputs[Entrée de conversion de données]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[EmployeeID_R]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[EmployeeID_R]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="20"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[EmployeeID_R]"
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[EmployeeID_R]"
                       name="EmployeeID_R"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -551,13 +552,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[Site_R]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[Site_R]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[Site_R]"
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[Site_R]"
                       name="Site_R"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -573,13 +574,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[ManagerName_R]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[ManagerName_R]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="100"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[ManagerName_R]"
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[ManagerName_R]"
                       name="ManagerName_R"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -595,13 +596,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[State_R]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[State_R]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[State_R]"
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[State_R]"
                       name="State_R"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -617,13 +618,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[City_R]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[City_R]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[City_R]"
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[City_R]"
                       name="City_R"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -639,21 +640,21 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[Name_R]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[StateName_R]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[Name_R]"
-                      name="Name_R"
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[StateName_R]"
+                      name="StateName_R"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Spécifie la colonne d'entrée utilisée comme source de données pour la conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[Name]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1].Columns[StateName]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
@@ -661,13 +662,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[Region_R]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[Region_R]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[Region_R]"
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[Region_R]"
                       name="Region_R"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -683,13 +684,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[FirstName_R]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[FirstName_R]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[FirstName_R]"
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[FirstName_R]"
                       name="FirstName_R"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -705,13 +706,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[LastName_R]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[LastName_R]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[LastName_R]"
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[LastName_R]"
                       name="LastName_R"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -730,22 +731,22 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie d'erreur de conversion de données]"
+                  refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie d'erreur de conversion de données]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Sortie d'erreur de conversion de données"
-                  synchronousInputId="Package\DFT - Load ODS Employees\DCVN - Resizing.Inputs[Entrée de conversion de données]">
+                  synchronousInputId="Package\DFT - Load ODS Employees\DCNV - Resizing.Inputs[Entrée de conversion de données]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie d'erreur de conversion de données].Columns[ErrorCode]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie d'erreur de conversion de données].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie d'erreur de conversion de données].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie d'erreur de conversion de données].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie d'erreur de conversion de données].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie d'erreur de conversion de données].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie d'erreur de conversion de données].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie d'erreur de conversion de données].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -945,14 +946,14 @@
                   synchronousInputId="Package\DFT - Load ODS Employees\DER - Error StateCODE.Inputs[Entrée de colonne dérivée]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DER - Error StateCODE.Outputs[Sortie de colonne dérivée].Columns[Name]"
+                      refId="Package\DFT - Load ODS Employees\DER - Error StateCODE.Outputs[Sortie de colonne dérivée].Columns[StateName]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Calcul"
                       errorRowDisposition="FailComponent"
                       length="45"
-                      lineageId="Package\DFT - Load ODS Employees\DER - Error StateCODE.Outputs[Sortie de colonne dérivée].Columns[Name]"
-                      name="Name"
+                      lineageId="Package\DFT - Load ODS Employees\DER - Error StateCODE.Outputs[Sortie de colonne dérivée].Columns[StateName]"
+                      name="StateName"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1452,13 +1453,13 @@ where [refTable].[StateCD] = ?</property>
                   synchronousInputId="Package\DFT - Load ODS Employees\LKP - Bind State with StateName &amp; Region.Inputs[Entrée de recherche]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\LKP - Bind State with StateName &amp; Region.Outputs[Sortie de recherche avec correspondance].Columns[Name]"
+                      refId="Package\DFT - Load ODS Employees\LKP - Bind State with StateName &amp; Region.Outputs[Sortie de recherche avec correspondance].Columns[StateName]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Copie de colonnes"
                       length="255"
-                      lineageId="Package\DFT - Load ODS Employees\LKP - Bind State with StateName &amp; Region.Outputs[Sortie de recherche avec correspondance].Columns[Name]"
-                      name="Name"
+                      lineageId="Package\DFT - Load ODS Employees\LKP - Bind State with StateName &amp; Region.Outputs[Sortie de recherche avec correspondance].Columns[StateName]"
+                      name="StateName"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1540,17 +1541,17 @@ where [refTable].[StateCD] = ?</property>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load ODS Employees\MLT - State and City Unknown.Outputs[Sortie de multidiffusion 1]"
+                  refId="Package\DFT - Load ODS Employees\MLT - State and City Unknown.Outputs[Sortie de multidiffusion 2]"
                   deleteOutputOnPathDetached="true"
-                  name="Sortie de multidiffusion 1"
+                  name="Sortie de multidiffusion 2"
                   synchronousInputId="Package\DFT - Load ODS Employees\MLT - State and City Unknown.Inputs[Multidiffusion entrée 1]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load ODS Employees\MLT - State and City Unknown.Outputs[Sortie de multidiffusion 2]"
+                  refId="Package\DFT - Load ODS Employees\MLT - State and City Unknown.Outputs[Sortie de multidiffusion 1]"
                   dangling="true"
                   deleteOutputOnPathDetached="true"
-                  name="Sortie de multidiffusion 2"
+                  name="Sortie de multidiffusion 1"
                   synchronousInputId="Package\DFT - Load ODS Employees\MLT - State and City Unknown.Inputs[Multidiffusion entrée 1]">
                   <externalMetadataColumns />
                 </output>
@@ -1635,7 +1636,7 @@ where [refTable].[StateCD] = ?</property>
                       cachedLength="20"
                       cachedName="EmployeeID_R"
                       externalMetadataColumnId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[EmployeeID]"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[EmployeeID_R]" />
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[EmployeeID_R]" />
                     <inputColumn
                       refId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].Columns[ManagerName_R]"
                       cachedCodepage="1252"
@@ -1643,7 +1644,7 @@ where [refTable].[StateCD] = ?</property>
                       cachedLength="100"
                       cachedName="ManagerName_R"
                       externalMetadataColumnId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[ManagerName]"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[ManagerName_R]" />
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[ManagerName_R]" />
                     <inputColumn
                       refId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].Columns[City_R]"
                       cachedCodepage="1252"
@@ -1651,15 +1652,7 @@ where [refTable].[StateCD] = ?</property>
                       cachedLength="50"
                       cachedName="City_R"
                       externalMetadataColumnId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[City]"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[City_R]" />
-                    <inputColumn
-                      refId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].Columns[Name_R]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Name_R"
-                      externalMetadataColumnId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[Name]"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[Name_R]" />
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[City_R]" />
                     <inputColumn
                       refId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].Columns[Region_R]"
                       cachedCodepage="1252"
@@ -1667,7 +1660,7 @@ where [refTable].[StateCD] = ?</property>
                       cachedLength="50"
                       cachedName="Region_R"
                       externalMetadataColumnId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[Region]"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[Region_R]" />
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[Region_R]" />
                     <inputColumn
                       refId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].Columns[FirstName_R]"
                       cachedCodepage="1252"
@@ -1675,7 +1668,7 @@ where [refTable].[StateCD] = ?</property>
                       cachedLength="50"
                       cachedName="FirstName_R"
                       externalMetadataColumnId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[FirstName]"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[FirstName_R]" />
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[FirstName_R]" />
                     <inputColumn
                       refId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].Columns[LastName_R]"
                       cachedCodepage="1252"
@@ -1683,7 +1676,15 @@ where [refTable].[StateCD] = ?</property>
                       cachedLength="50"
                       cachedName="LastName_R"
                       externalMetadataColumnId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[LastName]"
-                      lineageId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données].Columns[LastName_R]" />
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[LastName_R]" />
+                    <inputColumn
+                      refId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].Columns[StateName_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="StateName_R"
+                      externalMetadataColumnId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[StateName]"
+                      lineageId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données].Columns[StateName_R]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1706,12 +1707,6 @@ where [refTable].[StateCD] = ?</property>
                       length="50"
                       name="City" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[Name]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Name" />
-                    <externalMetadataColumn
                       refId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[Region]"
                       codePage="1252"
                       dataType="str"
@@ -1729,6 +1724,12 @@ where [refTable].[StateCD] = ?</property>
                       dataType="str"
                       length="50"
                       name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB].ExternalColumns[StateName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="StateName" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1854,7 +1855,7 @@ where [refTable].[StateCD] = ?</property>
                     <inputColumn
                       refId="Package\DFT - Load ODS Employees\OLE_DST - Technical_Rejects.Inputs[Entrée de destination OLE DB].Columns[RejectMessage]"
                       cachedDataType="wstr"
-                      cachedLength="469"
+                      cachedLength="264"
                       cachedName="RejectMessage"
                       externalMetadataColumnId="Package\DFT - Load ODS Employees\OLE_DST - Technical_Rejects.Inputs[Entrée de destination OLE DB].ExternalColumns[RejectMessage]"
                       lineageId="Package\DFT - Load ODS Employees\DER - Reject StateCODE.Outputs[Sortie de colonne dérivée].Columns[RejectMessage]" />
@@ -2135,15 +2136,15 @@ where [refTable].[StateCD] = ?</property>
               refId="Package\DFT - Load ODS Employees.Paths[Sortie de conversion de données]"
               endId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB]"
               name="Sortie de conversion de données"
-              startId="Package\DFT - Load ODS Employees\DCVN - Resizing.Outputs[Sortie de conversion de données]" />
+              startId="Package\DFT - Load ODS Employees\DCNV - Resizing.Outputs[Sortie de conversion de données]" />
             <path
-              refId="Package\DFT - Load ODS Employees.Paths[Sortie de multidiffusion 1]"
-              endId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 1]"
-              name="Sortie de multidiffusion 1"
-              startId="Package\DFT - Load ODS Employees\MLT - State and City Unknown.Outputs[Sortie de multidiffusion 1]" />
+              refId="Package\DFT - Load ODS Employees.Paths[Sortie de multidiffusion 2]"
+              endId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 3]"
+              name="Sortie de multidiffusion 2"
+              startId="Package\DFT - Load ODS Employees\MLT - State and City Unknown.Outputs[Sortie de multidiffusion 2]" />
             <path
               refId="Package\DFT - Load ODS Employees.Paths[Sortie de recherche avec correspondance]"
-              endId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Unir tout entrée 1]"
+              endId="Package\DFT - Load ODS Employees\ALL - Data after division.Inputs[Entrée Union All 2]"
               name="Sortie de recherche avec correspondance"
               startId="Package\DFT - Load ODS Employees\LKP - Bind State with StateName &amp; Region.Outputs[Sortie de recherche avec correspondance]" />
             <path
@@ -2158,7 +2159,7 @@ where [refTable].[StateCD] = ?</property>
               startId="Package\DFT - Load ODS Employees\OLE_SRC - Load STA Employees.Outputs[Sortie de source OLE DB]" />
             <path
               refId="Package\DFT - Load ODS Employees.Paths[Unir tout sortie 1]"
-              endId="Package\DFT - Load ODS Employees\DCVN - Resizing.Inputs[Entrée de conversion de données]"
+              endId="Package\DFT - Load ODS Employees\DCNV - Resizing.Inputs[Entrée de conversion de données]"
               name="Unir tout sortie 1"
               startId="Package\DFT - Load ODS Employees\ALL - Data after division.Outputs[Unir tout sortie 1]" />
           </paths>
@@ -2244,41 +2245,147 @@ where [refTable].[StateCD] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="197,42"
-          Id="Package\DFT - Load ODS Employees\DER - Error StateCODE"
-          TopLeft="938,415" />
-        <NodeLayout
-          Size="211,42"
-          Id="Package\DFT - Load ODS Employees\DER - Divide City from Site"
-          TopLeft="566,333" />
-        <NodeLayout
-          Size="203,42"
-          Id="Package\DFT - Load ODS Employees\DER - Reject StateCODE"
-          TopLeft="933,629" />
-        <NodeLayout
-          Size="229,42"
-          Id="Package\DFT - Load ODS Employees\OLE_DST - Technical_Rejects"
-          TopLeft="923,714" />
-        <NodeLayout
-          Size="228,42"
-          Id="Package\DFT - Load ODS Employees\MLT - State and City Unknown"
-          TopLeft="925,551" />
-        <NodeLayout
-          Size="289,42"
-          Id="Package\DFT - Load ODS Employees\LKP - Bind State with StateName &amp; Region"
-          TopLeft="531,415" />
+          Size="246,42"
+          Id="Package\DFT - Load ODS Employees\OLE_SRC - Load STA Employees"
+          TopLeft="548,14" />
         <NodeLayout
           Size="218,42"
           Id="Package\DFT - Load ODS Employees\DER - Divide State from Site"
           TopLeft="560,249" />
         <NodeLayout
+          Size="196,42"
+          Id="Package\DFT - Load ODS Employees\DER - Sliting FirstName"
+          TopLeft="573,93" />
+        <NodeLayout
+          Size="211,42"
+          Id="Package\DFT - Load ODS Employees\DER - Divide City from Site"
+          TopLeft="566,333" />
+        <NodeLayout
+          Size="289,42"
+          Id="Package\DFT - Load ODS Employees\LKP - Bind State with StateName &amp; Region"
+          TopLeft="531,415" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\DFT - Load ODS Employees\DCNV - Resizing"
+          TopLeft="596,638" />
+        <NodeLayout
           Size="220,42"
           Id="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees"
           TopLeft="560,725" />
         <NodeLayout
-          Size="246,42"
-          Id="Package\DFT - Load ODS Employees\OLE_SRC - Load STA Employees"
-          TopLeft="548,14" />
+          Size="195,42"
+          Id="Package\DFT - Load ODS Employees\DER - Sliting LastName"
+          TopLeft="575,170" />
+        <NodeLayout
+          Size="229,42"
+          Id="Package\DFT - Load ODS Employees\OLE_DST - Technical_Rejects"
+          TopLeft="923,714" />
+        <NodeLayout
+          Size="197,42"
+          Id="Package\DFT - Load ODS Employees\DER - Error StateCODE"
+          TopLeft="938,415" />
+        <NodeLayout
+          Size="203,42"
+          Id="Package\DFT - Load ODS Employees\DER - Reject StateCODE"
+          TopLeft="933,629" />
+        <NodeLayout
+          Size="196,42"
+          Id="Package\DFT - Load ODS Employees\ALL - Data after division"
+          TopLeft="579,539" />
+        <NodeLayout
+          Size="228,42"
+          Id="Package\DFT - Load ODS Employees\MLT - State and City Unknown"
+          TopLeft="925,551" />
+        <EdgeLayout
+          Id="Package\DFT - Load ODS Employees.Paths[Sortie de recherche sans correspondance]"
+          TopLeft="820,436">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="118,0"
+              Start="0,0"
+              End="110.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="110.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-36.25201171875,5,183.0040234375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load ODS Employees.Paths[Sortie de conversion de données]"
+          TopLeft="673.5,680">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45"
+              Start="0,0"
+              End="0,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load ODS Employees.Paths[Sortie de colonne dérivée5]"
+          TopLeft="670.75,212">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37"
+              Start="0,0"
+              End="0,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load ODS Employees.Paths[Sortie de colonne dérivée4]"
+          TopLeft="671.75,135">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35"
+              Start="0,0"
+              End="0,27.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load ODS Employees.Paths[Sortie de colonne dérivée3]"
           TopLeft="1037.75,457">
@@ -2390,60 +2497,6 @@ where [refTable].[StateCD] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load ODS Employees.Paths[Sortie de recherche sans correspondance]"
-          TopLeft="820,436">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="118,0"
-              Start="0,0"
-              End="110.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="110.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-36.25201171875,5,183.0040234375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="162,42"
-          Id="Package\DFT - Load ODS Employees\DCVN - Resizing"
-          TopLeft="596,638" />
-        <EdgeLayout
-          Id="Package\DFT - Load ODS Employees.Paths[Sortie de conversion de données]"
-          TopLeft="673.5,680">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45"
-              Start="0,0"
-              End="0,37.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="196,42"
-          Id="Package\DFT - Load ODS Employees\DER - Sliting FirstName"
-          TopLeft="573,93" />
-        <EdgeLayout
           Id="Package\DFT - Load ODS Employees.Paths[Sortie de source OLE DB]"
           TopLeft="671,56">
           <EdgeLayout.Curve>
@@ -2465,58 +2518,6 @@ where [refTable].[StateCD] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="195,42"
-          Id="Package\DFT - Load ODS Employees\DER - Sliting LastName"
-          TopLeft="575,170" />
-        <EdgeLayout
-          Id="Package\DFT - Load ODS Employees.Paths[Sortie de colonne dérivée4]"
-          TopLeft="671.75,135">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35"
-              Start="0,0"
-              End="0,27.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load ODS Employees.Paths[Sortie de colonne dérivée5]"
-          TopLeft="670.75,212">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,37"
-              Start="0,0"
-              End="0,29.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="196,42"
-          Id="Package\DFT - Load ODS Employees\ALL - Data after division"
-          TopLeft="579,539" />
         <EdgeLayout
           Id="Package\DFT - Load ODS Employees.Paths[Sortie de recherche avec correspondance]"
           TopLeft="676.25,457">
@@ -2542,7 +2543,29 @@ where [refTable].[StateCD] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load ODS Employees.Paths[Sortie de multidiffusion 1]"
+          Id="Package\DFT - Load ODS Employees.Paths[Unir tout sortie 1]"
+          TopLeft="677,581">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57"
+              Start="0,0"
+              End="0,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load ODS Employees.Paths[Sortie de multidiffusion 2]"
           TopLeft="925,572">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -2575,33 +2598,11 @@ where [refTable].[StateCD] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load ODS Employees.Paths[Unir tout sortie 1]"
-          TopLeft="677,581">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,57"
-              Start="0,0"
-              End="0,49.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load ODS Employees\OLE_DST - Technical_Rejects">
+    design-time-name="Package\DFT - Load ODS Employees\OLE_SRC - Load STA Employees">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2650,7 +2651,7 @@ where [refTable].[StateCD] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load ODS Employees\OLE_SRC - Load STA Employees">
+    design-time-name="Package\DFT - Load ODS Employees\OLE_DST - Technical_Rejects">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

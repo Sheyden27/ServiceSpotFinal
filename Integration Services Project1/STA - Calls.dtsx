@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{096E02E0-B458-45DF-96A3-0B15B6252A14}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{AAE525AF-D585-4B9A-9151-1F0D0A682E16}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -106,13 +106,13 @@
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Conteneur de boucles Foreach"
+      DTS:refId="Package\FELC - Loop all csv files"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Conteneur de boucles Foreach"
       DTS:DTSID="{54DE078F-0ACF-4128-9775-583ADEFFEB47}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Conteneur de boucles Foreach">
+      DTS:ObjectName="FELC - Loop all csv files">
       <DTS:ForEachEnumerator
         DTS:CreationName="Microsoft.ForEachFileEnumerator"
         DTS:DTSID="{9796BA80-A486-4663-A273-9DB529BD0733}"
@@ -133,7 +133,7 @@
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package\Conteneur de boucles Foreach\DFT - STA Calls"
+          DTS:refId="Package\FELC - Loop all csv files\DFT - STA Calls"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Tâche de flux de données"
           DTS:DTSID="{76F06657-29BA-4357-BA4D-23CA6E8DA3D3}"
@@ -147,7 +147,7 @@
               version="1">
               <components>
                 <component
-                  refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls"
+                  refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls"
                   componentClassID="Microsoft.FlatFileSource"
                   contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
                   description="Source du fichier plat"
@@ -167,25 +167,25 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Connections[FlatFileConnection]"
+                      refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Connections[FlatFileConnection]"
                       connectionManagerID="Package.ConnectionManagers[FF - STA Calls]"
                       connectionManagerRefId="Package.ConnectionManagers[FF - STA Calls]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
                     <output
-                      refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat]"
+                      refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat]"
                       name="Sortie de source de fichier plat">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallTimestamp]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallTimestamp]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallTimestamp]"
+                          externalMetadataColumnId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallTimestamp]"
                           length="50"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallTimestamp]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallTimestamp]"
                           name="CallTimestamp"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -200,14 +200,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[Call Type]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[Call Type]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[Call Type]"
+                          externalMetadataColumnId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[Call Type]"
                           length="50"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[Call Type]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[Call Type]"
                           name="Call Type"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -222,14 +222,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[EmployeeID]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[EmployeeID]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[EmployeeID]"
+                          externalMetadataColumnId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[EmployeeID]"
                           length="50"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[EmployeeID]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[EmployeeID]"
                           name="EmployeeID"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -244,14 +244,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallDuration]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallDuration]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallDuration]"
+                          externalMetadataColumnId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallDuration]"
                           length="50"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallDuration]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallDuration]"
                           name="CallDuration"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -266,14 +266,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[WaitTime]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[WaitTime]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[WaitTime]"
+                          externalMetadataColumnId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[WaitTime]"
                           length="50"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[WaitTime]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[WaitTime]"
                           name="WaitTime"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -288,14 +288,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallAbandoned]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallAbandoned]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallAbandoned]"
+                          externalMetadataColumnId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallAbandoned]"
                           length="50"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallAbandoned]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallAbandoned]"
                           name="CallAbandoned"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -313,37 +313,37 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallTimestamp]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallTimestamp]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="CallTimestamp" />
                         <externalMetadataColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[Call Type]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[Call Type]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Call Type" />
                         <externalMetadataColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[EmployeeID]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[EmployeeID]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="EmployeeID" />
                         <externalMetadataColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallDuration]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallDuration]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="CallDuration" />
                         <externalMetadataColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[WaitTime]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[WaitTime]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="WaitTime" />
                         <externalMetadataColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallAbandoned]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallAbandoned]"
                           codePage="1252"
                           dataType="str"
                           length="50"
@@ -351,27 +351,27 @@
                       </externalMetadataColumns>
                     </output>
                     <output
-                      refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie d'erreur de source de fichier plat]"
+                      refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie d'erreur de source de fichier plat]"
                       isErrorOut="true"
                       name="Sortie d'erreur de source de fichier plat">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
                           codePage="1252"
                           dataType="text"
                           description="Colonne de sortie d'erreur de source de fichier plat"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
                           name="Colonne de sortie d'erreur de source de fichier plat" />
                         <outputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -380,7 +380,7 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls"
+                  refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls"
                   componentClassID="Microsoft.OLEDBDestination"
                   contactInfo="Destination OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;4"
                   description="Destination OLE DB"
@@ -437,7 +437,7 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Connections[OleDbConnection]"
+                      refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Connections[OleDbConnection]"
                       connectionManagerID="{6877F1C3-8791-4702-8EA5-7AEA879672AD}:external"
                       connectionManagerRefId="Project.ConnectionManagers[STA_ServiceSpot 1]"
                       description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
@@ -445,99 +445,99 @@
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB]"
+                      refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB]"
                       errorOrTruncationOperation="Insérer"
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="Entrée de destination OLE DB">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].Columns[CallTimestamp]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].Columns[CallTimestamp]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="CallTimestamp"
-                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallTimestamp]"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallTimestamp]" />
+                          externalMetadataColumnId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallTimestamp]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallTimestamp]" />
                         <inputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].Columns[Call Type]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].Columns[Call Type]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Call Type"
-                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[Call Type]"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[Call Type]" />
+                          externalMetadataColumnId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[Call Type]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[Call Type]" />
                         <inputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].Columns[EmployeeID]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].Columns[EmployeeID]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="EmployeeID"
-                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[EmployeeID]"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[EmployeeID]" />
+                          externalMetadataColumnId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[EmployeeID]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[EmployeeID]" />
                         <inputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].Columns[CallDuration]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].Columns[CallDuration]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="CallDuration"
-                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallDuration]"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallDuration]" />
+                          externalMetadataColumnId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallDuration]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallDuration]" />
                         <inputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].Columns[WaitTime]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].Columns[WaitTime]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="WaitTime"
-                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[WaitTime]"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[WaitTime]" />
+                          externalMetadataColumnId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[WaitTime]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[WaitTime]" />
                         <inputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].Columns[CallAbandoned]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].Columns[CallAbandoned]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="CallAbandoned"
-                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallAbandoned]"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallAbandoned]" />
+                          externalMetadataColumnId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallAbandoned]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallAbandoned]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallID]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallID]"
                           dataType="i4"
                           name="CallID" />
                         <externalMetadataColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallTimestamp]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallTimestamp]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="CallTimestamp" />
                         <externalMetadataColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[Call Type]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[Call Type]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="Call Type" />
                         <externalMetadataColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[EmployeeID]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[EmployeeID]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="EmployeeID" />
                         <externalMetadataColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallDuration]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallDuration]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="CallDuration" />
                         <externalMetadataColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[WaitTime]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[WaitTime]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="WaitTime" />
                         <externalMetadataColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallAbandoned]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallAbandoned]"
                           codePage="1252"
                           dataType="str"
                           length="255"
@@ -547,22 +547,22 @@
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Outputs[Sortie d'erreur de destination OLE DB]"
+                      refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Outputs[Sortie d'erreur de destination OLE DB]"
                       exclusionGroup="1"
                       isErrorOut="true"
                       name="Sortie d'erreur de destination OLE DB"
-                      synchronousInputId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB]">
+                      synchronousInputId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                          refId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                          lineageId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -573,10 +573,10 @@
               </components>
               <paths>
                 <path
-                  refId="Package\Conteneur de boucles Foreach\DFT - STA Calls.Paths[Sortie de source de fichier plat]"
-                  endId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB]"
+                  refId="Package\FELC - Loop all csv files\DFT - STA Calls.Paths[Sortie de source de fichier plat]"
+                  endId="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB]"
                   name="Sortie de source de fichier plat"
-                  startId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat]" />
+                  startId="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls.Outputs[Sortie de source de fichier plat]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -617,7 +617,7 @@
       DTS:From="Package\SQL - Dump Data STA Calls"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\Conteneur de boucles Foreach" />
+      DTS:To="Package\FELC - Loop all csv files" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -633,14 +633,14 @@
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="159,42"
-          Id="Package\Conteneur de boucles Foreach\DFT - STA Calls"
+          Id="Package\FELC - Loop all csv files\DFT - STA Calls"
           TopLeft="47,34" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="272,128"
           Size="272,171"
-          Id="Package\Conteneur de boucles Foreach"
+          Id="Package\FELC - Loop all csv files"
           TopLeft="490,194" />
         <NodeLayout
           Size="218,42"
@@ -684,20 +684,20 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Conteneur de boucles Foreach\DFT - STA Calls">
+    design-time-name="Package\FELC - Loop all csv files\DFT - STA Calls">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="180,42"
-          Id="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls"
+          Id="Package\FELC - Loop all csv files\DFT - STA Calls\FF_SRC - STA Calls"
           TopLeft="383,173" />
         <NodeLayout
           Size="195,42"
-          Id="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls"
+          Id="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls"
           TopLeft="385,321" />
         <EdgeLayout
-          Id="Package\Conteneur de boucles Foreach\DFT - STA Calls.Paths[Sortie de source de fichier plat]"
+          Id="Package\FELC - Loop all csv files\DFT - STA Calls.Paths[Sortie de source de fichier plat]"
           TopLeft="473,215">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -734,7 +734,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls">
+    design-time-name="Package\FELC - Loop all csv files\DFT - STA Calls\OLE_SRC - STA - Calls">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
