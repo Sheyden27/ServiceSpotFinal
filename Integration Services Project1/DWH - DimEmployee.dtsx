@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{D0CADF76-A449-40A5-996F-996962CAEBE8}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{B425BC61-838D-4F7B-818C-7C5A433C3DBD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -1215,6 +1215,13 @@ where [refTable].[EmployeeID] = ? and [refTable].[FirstName] = ? and [refTable].
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="Always keep disabled, only here if you have a problem"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="316,60"
+          Id="1364b00b-bc43-482f-ae9e-882c524cbb74"
+          TopLeft="795,194" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
