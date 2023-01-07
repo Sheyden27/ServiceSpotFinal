@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="ADM_ServiceSpot"
   DTS:DTSID="{670BDC5D-8E9A-4749-8966-8FAFA422CB09}"
