@@ -1,9 +1,9 @@
-// COMMAND 1
+/* COMMAND 1 */
 
 USE [STA_ServiceSpot]
 GO
 
-/****** Object:  Table [dbo].[Calls]    Script Date: 05/01/2023 09:44:16 ******/
+/****** Object:  Table [dbo].[Calls]    Script Date: 07/01/2023 19:57:17 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -12,12 +12,12 @@ GO
 
 CREATE TABLE [dbo].[Calls](
 	[CallID] [int] IDENTITY(1,1) NOT NULL,
-	[CallTimestamp] [varchar](50) NULL,
-	[Call Type] [varchar](50) NULL,
-	[EmployeeID] [varchar](50) NULL,
-	[CallDuration] [varchar](50) NULL,
-	[WaitTime] [varchar](50) NULL,
-	[CallAbandoned] [varchar](50) NULL,
+	[CallTimestamp] [varchar](255) NULL,
+	[Call Type] [varchar](255) NULL,
+	[EmployeeID] [varchar](255) NULL,
+	[CallDuration] [varchar](255) NULL,
+	[WaitTime] [varchar](255) NULL,
+	[CallAbandoned] [varchar](255) NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[CallID] ASC
@@ -27,36 +27,37 @@ GO
 
 
 
-// COMMAND 2
+
+/* COMMAND 2 */
 
 USE [STA_ServiceSpot]
 GO
 
-/****** Object:  Table [dbo].[Employees]    Script Date: 05/01/2023 09:58:55 ******/
+/****** Object:  Table [dbo].[Employees]    Script Date: 07/01/2023 19:58:22 ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].Employees(
-	[EmployeeID] [varchar](50) NULL,
-	[EmployeeName] [varchar](50) NULL,
-	[Site] [varchar](50) NULL,
-	[ManagerName] [varchar](50) NULL
+CREATE TABLE [dbo].[Employees](
+	[EmployeeID] [varchar](255) NULL,
+	[EmployeeName] [varchar](255) NULL,
+	[Site] [varchar](255) NULL,
+	[ManagerName] [varchar](255) NULL
 ) ON [PRIMARY]
 GO
 
 
 
 
-// COMMAND 3
+/* COMMAND 3 */
 
 
 USE [STA_ServiceSpot]
 GO
 
-/****** Object:  Table [dbo].[CallTypes]    Script Date: 05/01/2023 10:21:33 ******/
+/****** Object:  Table [dbo].[CallTypes]    Script Date: 07/01/2023 19:57:46 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -64,19 +65,20 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[CallTypes](
-	[CallTypeID] [varchar](50) NULL,
-	[CallTypeLabel] [varchar](50) NULL
+	[CallTypeID] [varchar](255) NULL,
+	[CallTypeLabel] [varchar](255) NULL
 ) ON [PRIMARY]
 GO
 
 
 
-// COMMAND 4 
+
+/* COMMAND 4 */
 
 USE [STA_ServiceSpot]
 GO
 
-/****** Object:  Table [dbo].[Charges]    Script Date: 05/01/2023 10:21:47 ******/
+/****** Object:  Table [dbo].[Charges]    Script Date: 07/01/2023 19:58:04 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -84,22 +86,22 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[Charges](
-	[Call Type ] [varchar](50) NULL,
-	[Call Charges (2018)] [varchar](50) NULL,
-	[Call Charges (2019)] [varchar](50) NULL,
-	[Call Charges (2020)] [varchar](50) NULL,
-	[Call Charges (2021)] [varchar](50) NULL
+	[Call Type ] [varchar](255) NULL,
+	[Call Charges (2018)] [varchar](255) NULL,
+	[Call Charges (2019)] [varchar](255) NULL,
+	[Call Charges (2020)] [varchar](255) NULL
 ) ON [PRIMARY]
 GO
 
 
 
-// COMMAND 5
+
+/* COMMAND 5 */
 
 USE [STA_ServiceSpot]
 GO
 
-/****** Object:  Table [dbo].[UStates]    Script Date: 05/01/2023 10:22:08 ******/
+/****** Object:  Table [dbo].[UStates]    Script Date: 07/01/2023 19:58:37 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -107,11 +109,278 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[UStates](
-	[StateCD] [varchar](50) NULL,
-	[Name] [varchar](50) NULL,
+	[StateCD] [varchar](255) NULL,
+	[Name] [varchar](255) NULL,
+	[Region] [varchar](255) NULL
+) ON [PRIMARY]
+GO
+
+
+
+
+/* COMMAND 6 */
+
+USE [ODS_ServiceSpot]
+GO
+
+/****** Object:  Table [dbo].[Employees]    Script Date: 07/01/2023 20:00:22 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Employees](
+	[EmployeeID] [varchar](20) NULL,
+	[FirstName] [varchar](50) NULL,
+	[LastName] [varchar](50) NULL,
+	[ManagerName] [varchar](100) NULL,
+	[City] [varchar](50) NULL,
+	[StateName] [varchar](50) NULL,
 	[Region] [varchar](50) NULL
 ) ON [PRIMARY]
 GO
 
 
 
+
+/* COMMAND 7 */
+
+USE [ODS_ServiceSpot]
+GO
+
+/****** Object:  Table [dbo].[Charges]    Script Date: 07/01/2023 20:00:43 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Charges](
+	[Year] [int] NULL,
+	[Price] [decimal](28, 2) NULL,
+	[Call Type] [varchar](50) NULL
+) ON [PRIMARY]
+GO
+
+
+
+
+/* COMMAND 8 */
+
+USE [ODS_ServiceSpot]
+GO
+
+/****** Object:  Table [dbo].[Calls]    Script Date: 07/01/2023 19:56:24 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Calls](
+	[CallID] [int] NULL,
+	[Date] [date] NULL,
+	[Time] [time](0) NULL,
+	[Type] [varchar](50) NULL,
+	[EmployeeID] [varchar](50) NULL,
+	[CallDuration] [int] NULL,
+	[WaitTime] [int] NULL,
+	[CallAbandoned] [int] NULL,
+	[Profit] [numeric](28, 2) NULL,
+	[SLA] [varchar](10) NULL
+) ON [PRIMARY]
+GO
+
+
+
+/* COMMAND 9 */
+
+USE [ADM_ServiceSpot]
+GO
+
+/****** Object:  Table [dbo].[Technical_Rejects]    Script Date: 07/01/2023 19:56:45 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Technical_Rejects](
+	[RejectDate] [datetime] NULL,
+	[RejectPackage] [varchar](255) NULL,
+	[RejectTask] [varchar](255) NULL,
+	[RejectMessage] [nvarchar](317) NULL
+) ON [PRIMARY]
+GO
+
+
+
+
+/* COMMAND 10 */
+
+USE [DWH_ServiceSpot]
+GO
+
+/****** Object:  Table [dbo].[DimEmployee]    Script Date: 07/01/2023 20:01:08 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[DimEmployee](
+	[EmployeeKey] [int] IDENTITY(1,1) NOT NULL,
+	[EmployeeID] [varchar](20) NULL,
+	[FirstName] [varchar](50) NULL,
+	[LastName] [varchar](50) NULL,
+	[ManagerName] [varchar](100) NULL,
+	[City] [varchar](50) NULL,
+	[StateName] [varchar](50) NULL,
+	[Region] [varchar](50) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[EmployeeKey] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+
+/* COMMAND 11 */
+
+USE [DWH_ServiceSpot]
+GO
+
+/****** Object:  Table [dbo].[FactCalls]    Script Date: 07/01/2023 20:35:52 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[FactCalls](
+	[CallID] [int] NULL,
+	[DateKey] [int] NULL,
+	[Time] [time](0) NULL,
+	[Type] [varchar](50) NULL,
+	[EmployeeIDKey] [int] NULL,
+	[CallDuration] [int] NULL,
+	[WaitTime] [int] NULL,
+	[CallAbandoned] [int] NULL,
+	[Profit] [numeric](28, 2) NULL,
+	[SLA] [varchar](10) NULL
+) ON [PRIMARY]
+GO
+
+
+
+
+/* COMMAND 12 */
+
+USE [DWH_ServiceSpot]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE dbo.DimDate (
+   DateKey INT NOT NULL PRIMARY KEY,
+   [Date] DATE NOT NULL,
+   [Day] TINYINT NOT NULL,
+   [DaySuffix] CHAR(2) NOT NULL,
+   [Weekday] TINYINT NOT NULL,
+   [WeekDayName] VARCHAR(10) NOT NULL,
+   [WeekDayName_Short] CHAR(3) NOT NULL,
+   [DayOfYear] SMALLINT NOT NULL,
+   [WeekOfMonth] TINYINT NOT NULL,
+   [WeekOfYear] TINYINT NOT NULL,
+   [Month] TINYINT NOT NULL,
+   [MonthName] VARCHAR(10) NOT NULL,
+   [MonthName_Short] CHAR(3) NOT NULL,
+   [Quarter] TINYINT NOT NULL,
+   [QuarterName] VARCHAR(6) NOT NULL,
+   [Year] INT NOT NULL,
+   [MMYYYY] CHAR(6) NOT NULL,
+   [MonthYear] CHAR(7) NOT NULL
+   )
+
+  
+   GO
+
+
+   SET NOCOUNT ON
+
+TRUNCATE TABLE DimDate
+
+DECLARE @CurrentDate DATE = '2017-01-01'
+DECLARE @EndDate DATE = '2025-12-31'
+
+WHILE @CurrentDate < @EndDate
+BEGIN
+   INSERT INTO [dbo].[DimDate] (
+      [DateKey],
+      [Date],
+      [Day],
+      [DaySuffix],
+      [Weekday],
+      [WeekDayName],
+      [WeekDayName_Short],
+      [DayOfYear],
+      [WeekOfMonth],
+      [WeekOfYear],
+      [Month],
+      [MonthName],
+      [MonthName_Short],
+      [Quarter],
+      [QuarterName],
+      [Year],
+      [MMYYYY],
+      [MonthYear]
+      )
+   SELECT DateKey = YEAR(@CurrentDate) * 10000 + MONTH(@CurrentDate) * 100 + DAY(@CurrentDate),
+      DATE = @CurrentDate,
+      Day = DAY(@CurrentDate),
+      [DaySuffix] = CASE 
+         WHEN DAY(@CurrentDate) = 1
+            OR DAY(@CurrentDate) = 21
+            OR DAY(@CurrentDate) = 31
+            THEN 'st'
+         WHEN DAY(@CurrentDate) = 2
+            OR DAY(@CurrentDate) = 22
+            THEN 'nd'
+         WHEN DAY(@CurrentDate) = 3
+            OR DAY(@CurrentDate) = 23
+            THEN 'rd'
+         ELSE 'th'
+         END,
+      WEEKDAY = DATEPART(dw, @CurrentDate),
+      WeekDayName = DATENAME(dw, @CurrentDate),
+      WeekDayName_Short = UPPER(LEFT(DATENAME(dw, @CurrentDate), 3)),
+      [DayOfYear] = DATENAME(dy, @CurrentDate),
+      [WeekOfMonth] = DATEPART(WEEK, @CurrentDate) - DATEPART(WEEK, DATEADD(MM, DATEDIFF(MM, 0, @CurrentDate), 0)) + 1,
+      [WeekOfYear] = DATEPART(wk, @CurrentDate),
+      [Month] = MONTH(@CurrentDate),
+      [MonthName] = DATENAME(mm, @CurrentDate),
+      [MonthName_Short] = UPPER(LEFT(DATENAME(mm, @CurrentDate), 3)),
+      [Quarter] = DATEPART(q, @CurrentDate),
+      [QuarterName] = CASE 
+         WHEN DATENAME(qq, @CurrentDate) = 1
+            THEN 'First'
+         WHEN DATENAME(qq, @CurrentDate) = 2
+            THEN 'second'
+         WHEN DATENAME(qq, @CurrentDate) = 3
+            THEN 'third'
+         WHEN DATENAME(qq, @CurrentDate) = 4
+            THEN 'fourth'
+         END,
+      [Year] = YEAR(@CurrentDate),
+      [MMYYYY] = RIGHT('0' + CAST(MONTH(@CurrentDate) AS VARCHAR(2)), 2) + CAST(YEAR(@CurrentDate) AS VARCHAR(4)),
+      [MonthYear] = CAST(YEAR(@CurrentDate) AS VARCHAR(4)) + UPPER(LEFT(DATENAME(mm, @CurrentDate), 3))
+
+   SET @CurrentDate = DATEADD(DD, 1, @CurrentDate)
+END
