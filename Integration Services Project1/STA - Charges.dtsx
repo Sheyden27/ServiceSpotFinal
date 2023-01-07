@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{693B2CF7-18C6-4C17-925B-C451F531C52F}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{3DA66CD9-55BB-44FD-993D-ED2FDAF0DF49}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -377,25 +377,25 @@
                       refId="Package\DFT - Charges\OLE_DST - Load Data STA Charges.Inputs[Entrée de destination OLE DB].ExternalColumns[Call Type ]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="255"
                       name="Call Type " />
                     <externalMetadataColumn
                       refId="Package\DFT - Charges\OLE_DST - Load Data STA Charges.Inputs[Entrée de destination OLE DB].ExternalColumns[Call Charges (2018)]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="255"
                       name="Call Charges (2018)" />
                     <externalMetadataColumn
                       refId="Package\DFT - Charges\OLE_DST - Load Data STA Charges.Inputs[Entrée de destination OLE DB].ExternalColumns[Call Charges (2019)]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="255"
                       name="Call Charges (2019)" />
                     <externalMetadataColumn
                       refId="Package\DFT - Charges\OLE_DST - Load Data STA Charges.Inputs[Entrée de destination OLE DB].ExternalColumns[Call Charges (2020)]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="255"
                       name="Call Charges (2020)" />
                   </externalMetadataColumns>
                 </input>

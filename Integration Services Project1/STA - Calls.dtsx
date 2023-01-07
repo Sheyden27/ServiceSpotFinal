@@ -11,16 +11,16 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{EFDB9843-955B-47A8-8BC3-44F9002D1271}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{096E02E0-B458-45DF-96A3-0B15B6252A14}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:refId="Package.ConnectionManagers[FF - STA Calls]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{C31B3B69-4DB9-4FCB-AD1D-73D464738DDE}"
-      DTS:ObjectName="Flat File Connection Manager">
+      DTS:ObjectName="FF - STA Calls">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
       <DTS:ObjectData>
@@ -168,8 +168,8 @@
                   <connections>
                     <connection
                       refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - STA Calls.Connections[FlatFileConnection]"
-                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                      connectionManagerID="Package.ConnectionManagers[FF - STA Calls]"
+                      connectionManagerRefId="Package.ConnectionManagers[FF - STA Calls]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
@@ -510,37 +510,37 @@
                           refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallTimestamp]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="255"
                           name="CallTimestamp" />
                         <externalMetadataColumn
                           refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[Call Type]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="255"
                           name="Call Type" />
                         <externalMetadataColumn
                           refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[EmployeeID]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="255"
                           name="EmployeeID" />
                         <externalMetadataColumn
                           refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallDuration]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="255"
                           name="CallDuration" />
                         <externalMetadataColumn
                           refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[WaitTime]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="255"
                           name="WaitTime" />
                         <externalMetadataColumn
                           refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_SRC - STA - Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallAbandoned]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="255"
                           name="CallAbandoned" />
                       </externalMetadataColumns>
                     </input>

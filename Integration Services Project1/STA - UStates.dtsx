@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{96EEC454-FC7F-4711-AC4A-CE8013597DB8}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{D9892785-493F-49D7-94D2-8525A2D2CF06}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -332,19 +332,19 @@
                       refId="Package\DFT - STA UStates\OLE_DST - Load Data STA UStates.Inputs[Entrée de destination OLE DB].ExternalColumns[StateCD]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="255"
                       name="StateCD" />
                     <externalMetadataColumn
                       refId="Package\DFT - STA UStates\OLE_DST - Load Data STA UStates.Inputs[Entrée de destination OLE DB].ExternalColumns[Name]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="255"
                       name="Name" />
                     <externalMetadataColumn
                       refId="Package\DFT - STA UStates\OLE_DST - Load Data STA UStates.Inputs[Entrée de destination OLE DB].ExternalColumns[Region]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="255"
                       name="Region" />
                   </externalMetadataColumns>
                 </input>
