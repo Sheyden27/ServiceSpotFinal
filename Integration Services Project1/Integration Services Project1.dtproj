@@ -35,7 +35,6 @@
           <SSIS:Package SSIS:Name="STA - Calls.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="STA - UStates.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="STA - Employees.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Scheduler.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="STA - CallTypes.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="ODS - Charges.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="ODS - Employees.dtsx" SSIS:EntryPoint="1" />
