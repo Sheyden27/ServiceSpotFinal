@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{D9892785-493F-49D7-94D2-8525A2D2CF06}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{55DA4EA4-22A7-4419-A1E7-0024D67B56FB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -21,6 +21,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{67D835A5-AA52-4B82-8F30-BF6780FD5735}"
       DTS:ObjectName="Flat File Connection Manager">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">REPLACE( @[$Project::Calls_Data_Path],  SUBSTRING( @[$Project::Calls_Data_Path], FINDSTRING( @[$Project::Calls_Data_Path] , "\\", TOKENCOUNT( @[$Project::Calls_Data_Path] , "\\") - 1 ), 15 ), "") + "\\US States.csv"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"

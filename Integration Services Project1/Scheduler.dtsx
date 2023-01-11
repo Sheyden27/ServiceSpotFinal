@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="MSI"
   DTS:CreatorName="MSI\Dash"
-  DTS:DTSID="{3BEEAE0C-F580-46DD-BCA3-E5896000084A}"
+  DTS:DTSID="{B341BEE7-C483-48A2-BA66-39C3F8777252}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5035.3"
   DTS:LocaleID="1036"
-  DTS:ObjectName="Package1"
+  DTS:ObjectName="Scheduler"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{39C40378-4923-48E0-9168-DB5754E0AFD6}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{50EE9DB0-B0D6-40F8-A053-15013DEA15D7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -21,7 +21,7 @@
       DTS:refId="Package\SEQC - Generate DWH Tables"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Conteneur de séquences"
-      DTS:DTSID="{779A3F40-B6A2-4C39-8BF2-B0783C4A708F}"
+      DTS:DTSID="{CAFBD7CF-1234-4D4A-B19C-28668EDACF8E}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="SEQC - Generate DWH Tables">
@@ -31,7 +31,7 @@
           DTS:refId="Package\SEQC - Generate DWH Tables\EPT - DimEmployee"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Tâche d'exécution de package"
-          DTS:DTSID="{59B2C32B-DDB3-444F-9436-CCA1166204D8}"
+          DTS:DTSID="{2BC98550-14AB-401B-8AA9-FA11C684D3D3}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="EPT - DimEmployee"
@@ -48,7 +48,7 @@
           DTS:refId="Package\SEQC - Generate DWH Tables\EPT - FactCalls"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Tâche d'exécution de package"
-          DTS:DTSID="{96D0132E-795B-4587-A46D-8CA990B0A639}"
+          DTS:DTSID="{862F2FD1-F758-4137-9FAA-028E1AF5292B}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="EPT - FactCalls"
@@ -66,7 +66,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\SEQC - Generate DWH Tables.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{BB75F37B-008D-4E1A-BBB8-FABDFA8915B8}"
+          DTS:DTSID="{7AA03AAF-E9E4-4A53-A807-E504CFED5689}"
           DTS:From="Package\SEQC - Generate DWH Tables\EPT - DimEmployee"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -77,7 +77,7 @@
       DTS:refId="Package\SEQC - Generate ODS Tables"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Conteneur de séquences"
-      DTS:DTSID="{7046AC3A-29A3-4546-BA54-D545F76A6EB8}"
+      DTS:DTSID="{61457FEF-00E5-4DC5-8775-B4297EF482C9}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="SEQC - Generate ODS Tables">
@@ -87,7 +87,7 @@
           DTS:refId="Package\SEQC - Generate ODS Tables\EPT - ODS Calls"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Tâche d'exécution de package"
-          DTS:DTSID="{7DC358C9-A5AE-410A-987A-61E5C8DB8135}"
+          DTS:DTSID="{79D4DC60-6991-4495-8DCC-48907080D2D2}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="EPT - ODS Calls"
@@ -104,7 +104,7 @@
           DTS:refId="Package\SEQC - Generate ODS Tables\EPT - ODS Charges"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Tâche d'exécution de package"
-          DTS:DTSID="{AFA18730-6C8B-4735-8EB9-8A5F479D9DC5}"
+          DTS:DTSID="{F188FAB6-DFF5-4E18-8377-AECFC1683E82}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="EPT - ODS Charges"
@@ -121,7 +121,7 @@
           DTS:refId="Package\SEQC - Generate ODS Tables\EPT - ODS Employees"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Tâche d'exécution de package"
-          DTS:DTSID="{6418665A-D67E-48F7-A0C5-46403F89076D}"
+          DTS:DTSID="{6E0FEAAD-FD8D-45E8-B22B-26C8DA006762}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="EPT - ODS Employees"
@@ -139,7 +139,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\SEQC - Generate ODS Tables.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{7B6C3928-7514-4858-A1FD-85CDA7785415}"
+          DTS:DTSID="{C5CDF6B1-D8A2-4459-BE1D-C58D46124CE9}"
           DTS:From="Package\SEQC - Generate ODS Tables\EPT - ODS Employees"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -147,7 +147,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\SEQC - Generate ODS Tables.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
-          DTS:DTSID="{7AF3B8B2-C2E6-4398-AF03-DCAD920E301D}"
+          DTS:DTSID="{E7787C0A-1807-4B65-BD93-6EE96A46BB0E}"
           DTS:From="Package\SEQC - Generate ODS Tables\EPT - ODS Charges"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
@@ -158,7 +158,7 @@
       DTS:refId="Package\SEQC - Generate STA Tables"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Conteneur de séquences"
-      DTS:DTSID="{3D1A14CE-A79D-4582-B89B-32F42AD4C84F}"
+      DTS:DTSID="{1E131A5A-7812-46EF-8596-4160AEC84291}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="SEQC - Generate STA Tables">
@@ -168,7 +168,7 @@
           DTS:refId="Package\SEQC - Generate STA Tables\EPT - STA Calls"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Tâche d'exécution de package"
-          DTS:DTSID="{748C3B85-AAAF-4720-A7DA-052193D026E3}"
+          DTS:DTSID="{E3FF91CE-11CB-4314-AED7-C3F02AA4D12F}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="EPT - STA Calls"
@@ -185,7 +185,7 @@
           DTS:refId="Package\SEQC - Generate STA Tables\EPT - STA CallTypes"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Tâche d'exécution de package"
-          DTS:DTSID="{C7BB2D0C-2E58-4E37-9E6F-26FFB0250E85}"
+          DTS:DTSID="{EA5CDDD5-BCB8-47C1-8B10-FB587125DB44}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="EPT - STA CallTypes"
@@ -202,7 +202,7 @@
           DTS:refId="Package\SEQC - Generate STA Tables\EPT - STA Charges"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Tâche d'exécution de package"
-          DTS:DTSID="{F72702EB-46EC-4F64-9E2B-A4DE225A4891}"
+          DTS:DTSID="{350BB76C-83CA-4424-8248-07B2DB3537FD}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="EPT - STA Charges"
@@ -219,7 +219,7 @@
           DTS:refId="Package\SEQC - Generate STA Tables\EPT - STA UStates"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Tâche d'exécution de package"
-          DTS:DTSID="{766061A9-8FF4-4E2D-8D97-0C2ADDB9053B}"
+          DTS:DTSID="{15E278DE-21ED-4B3D-894C-E740ADA43C8B}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="EPT - STA UStates"
@@ -236,7 +236,7 @@
           DTS:refId="Package\SEQC - Generate STA Tables\EPT- STA Employees"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Tâche d'exécution de package"
-          DTS:DTSID="{7E4FDA74-5D73-4CBD-BA7C-7AE4C8DEE5C3}"
+          DTS:DTSID="{A117FE8B-63D6-4F48-A1BE-3DDE2DDC04DA}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="EPT- STA Employees"
@@ -256,7 +256,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{10C4D8BB-4D32-42DA-9085-91C7045F872C}"
+      DTS:DTSID="{9FE2154C-E093-4F32-9EE6-2935E876BF44}"
       DTS:From="Package\SEQC - Generate STA Tables"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -264,7 +264,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{F7B06BCF-4632-4528-BB93-A95E15E0C6C2}"
+      DTS:DTSID="{86A74EBC-9681-4EDB-9F59-150AAF4D639B}"
       DTS:From="Package\SEQC - Generate ODS Tables"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -283,44 +283,66 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="176,42"
-          Id="Package\SEQC - Generate STA Tables\EPT - STA Charges"
-          TopLeft="14,10" />
+          Size="178,42"
+          Id="Package\SEQC - Generate DWH Tables\EPT - DimEmployee"
+          TopLeft="15,19" />
         <NodeLayout
-          Size="186,42"
-          Id="Package\SEQC - Generate STA Tables\EPT- STA Employees"
-          TopLeft="60,57" />
-        <NodeLayout
-          Size="173,42"
-          Id="Package\SEQC - Generate STA Tables\EPT - STA UStates"
-          TopLeft="108,108" />
-        <NodeLayout
-          Size="183,42"
-          Id="Package\SEQC - Generate STA Tables\EPT - STA CallTypes"
-          TopLeft="155,156" />
-        <NodeLayout
-          Size="159,42"
-          Id="Package\SEQC - Generate STA Tables\EPT - STA Calls"
-          TopLeft="211,204" />
+          Size="156,42"
+          Id="Package\SEQC - Generate DWH Tables\EPT - FactCalls"
+          TopLeft="90,95" />
+        <EdgeLayout
+          Id="Package\SEQC - Generate DWH Tables.PrecedenceConstraints[Constraint]"
+          TopLeft="104,61">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="64,34"
+              Start="0,0"
+              End="64,26.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13"
+                    Point2="0,17"
+                    Point3="4,17" />
+                  <mssgle:LineSegment
+                    End="60,17" />
+                  <mssgle:CubicBezierSegment
+                    Point1="60,17"
+                    Point2="64,17"
+                    Point3="64,21" />
+                  <mssgle:LineSegment
+                    End="64,26.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="398,267"
-          Size="398,310"
-          Id="Package\SEQC - Generate STA Tables"
-          TopLeft="288,36" />
+          PanelSize="300,192"
+          Size="300,235"
+          Id="Package\SEQC - Generate DWH Tables"
+          TopLeft="342,707" />
         <NodeLayout
-          Size="191,42"
-          Id="Package\SEQC - Generate ODS Tables\EPT - ODS Employees"
-          TopLeft="11,13" />
+          Size="161,42"
+          Id="Package\SEQC - Generate ODS Tables\EPT - ODS Calls"
+          TopLeft="165,147" />
         <NodeLayout
           Size="178,42"
           Id="Package\SEQC - Generate ODS Tables\EPT - ODS Charges"
           TopLeft="89,80" />
         <NodeLayout
-          Size="161,42"
-          Id="Package\SEQC - Generate ODS Tables\EPT - ODS Calls"
-          TopLeft="165,147" />
+          Size="191,42"
+          Id="Package\SEQC - Generate ODS Tables\EPT - ODS Employees"
+          TopLeft="11,13" />
         <EdgeLayout
           Id="Package\SEQC - Generate ODS Tables.PrecedenceConstraints[Constraint]"
           TopLeft="106.5,55">
@@ -396,6 +418,33 @@
           Size="365,285"
           Id="Package\SEQC - Generate ODS Tables"
           TopLeft="305,385" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\SEQC - Generate STA Tables\EPT - STA Calls"
+          TopLeft="211,204" />
+        <NodeLayout
+          Size="183,42"
+          Id="Package\SEQC - Generate STA Tables\EPT - STA CallTypes"
+          TopLeft="155,156" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\SEQC - Generate STA Tables\EPT - STA Charges"
+          TopLeft="14,10" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\SEQC - Generate STA Tables\EPT - STA UStates"
+          TopLeft="108,108" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\SEQC - Generate STA Tables\EPT- STA Employees"
+          TopLeft="60,57" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="398,267"
+          Size="398,310"
+          Id="Package\SEQC - Generate STA Tables"
+          TopLeft="288,36" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="487.25,346">
@@ -418,55 +467,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="178,42"
-          Id="Package\SEQC - Generate DWH Tables\EPT - DimEmployee"
-          TopLeft="15,19" />
-        <NodeLayout
-          Size="156,42"
-          Id="Package\SEQC - Generate DWH Tables\EPT - FactCalls"
-          TopLeft="90,95" />
-        <EdgeLayout
-          Id="Package\SEQC - Generate DWH Tables.PrecedenceConstraints[Constraint]"
-          TopLeft="104,61">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="64,34"
-              Start="0,0"
-              End="64,26.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,13" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13"
-                    Point2="0,17"
-                    Point3="4,17" />
-                  <mssgle:LineSegment
-                    End="60,17" />
-                  <mssgle:CubicBezierSegment
-                    Point1="60,17"
-                    Point2="64,17"
-                    Point3="64,21" />
-                  <mssgle:LineSegment
-                    End="64,26.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="300,192"
-          Size="300,235"
-          Id="Package\SEQC - Generate DWH Tables"
-          TopLeft="342,707" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="489.75,670">

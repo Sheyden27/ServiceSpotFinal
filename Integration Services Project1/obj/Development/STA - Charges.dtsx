@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{3DA66CD9-55BB-44FD-993D-ED2FDAF0DF49}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{1D51A0CC-9F54-46B4-85A9-B07112603C83}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -21,6 +21,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{CC98E719-4E57-4F83-8001-FC837A390EED}"
       DTS:ObjectName="Flat File Connection Manager">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">REPLACE( @[$Project::Calls_Data_Path],  SUBSTRING( @[$Project::Calls_Data_Path], FINDSTRING( @[$Project::Calls_Data_Path] , "\\", TOKENCOUNT( @[$Project::Calls_Data_Path] , "\\") - 1 ), 15 ), "") + "\\Call Charges.csv"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"

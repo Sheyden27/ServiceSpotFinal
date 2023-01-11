@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{AAE525AF-D585-4B9A-9151-1F0D0A682E16}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{86C6071E-608A-442A-B926-DCD4CA8E02D6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -117,6 +117,10 @@
         DTS:CreationName="Microsoft.ForEachFileEnumerator"
         DTS:DTSID="{9796BA80-A486-4663-A273-9DB529BD0733}"
         DTS:ObjectName="{9796BA80-A486-4663-A273-9DB529BD0733}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[$Project::Calls_Data_Path]</DTS:PropertyExpression>
+        <DTS:PropertyExpression
+          DTS:Name="FileSpec">"*.*"</DTS:PropertyExpression>
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
@@ -585,8 +589,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{0C68C047-F60B-4731-9273-D0DC8555BAF6}"
-          DTS:ObjectName="{0C68C047-F60B-4731-9273-D0DC8555BAF6}"
+          DTS:DTSID="{11E9E7C1-A46B-4A77-A11A-6E3AD0042EA6}"
+          DTS:ObjectName="{11E9E7C1-A46B-4A77-A11A-6E3AD0042EA6}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::FilePath" />
       </DTS:ForEachVariableMappings>
