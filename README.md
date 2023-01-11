@@ -13,5 +13,5 @@ Bien garder absolument la structure de <br>
 
 Avec les bons noms de fichier ! /!\\  <br>
 Mettre à jour le project.params avec le chemin local du dossier Data/Calls data<br>
-TOUS LES STA CHEMINS VONT SE FAIRE AUTOMATIQUEMENT <br>
+TOUS LES CHEMINS DE FICHIERS STA VONT SE FAIRE AUTOMATIQUEMENT <br>
 Lancer le Scheduler.dtsx
