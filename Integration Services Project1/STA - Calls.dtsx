@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{2F9322F0-CA60-4090-9728-AEF881CE519E}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{AAE525AF-D585-4B9A-9151-1F0D0A682E16}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -115,12 +115,8 @@
       DTS:ObjectName="FELC - Loop all csv files">
       <DTS:ForEachEnumerator
         DTS:CreationName="Microsoft.ForEachFileEnumerator"
-        DTS:DTSID="{5358F431-11CA-4E34-B7D4-846F5F06DF96}"
-        DTS:ObjectName="{5358F431-11CA-4E34-B7D4-846F5F06DF96}">
-        <DTS:PropertyExpression
-          DTS:Name="Directory">@[$Project::Calls_Data_Path]</DTS:PropertyExpression>
-        <DTS:PropertyExpression
-          DTS:Name="FileSpec">"*.*"</DTS:PropertyExpression>
+        DTS:DTSID="{9796BA80-A486-4663-A273-9DB529BD0733}"
+        DTS:ObjectName="{9796BA80-A486-4663-A273-9DB529BD0733}">
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
@@ -589,8 +585,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{61163DB7-B93F-4F70-B78D-14C0500B23C8}"
-          DTS:ObjectName="{61163DB7-B93F-4F70-B78D-14C0500B23C8}"
+          DTS:DTSID="{0C68C047-F60B-4731-9273-D0DC8555BAF6}"
+          DTS:ObjectName="{0C68C047-F60B-4731-9273-D0DC8555BAF6}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::FilePath" />
       </DTS:ForEachVariableMappings>

@@ -1,0 +1,669 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/4/2023 4:24:11 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="MSI"
+  DTS:CreatorName="MSI\Dash"
+  DTS:DTSID="{2A4A2317-1C02-4035-804B-BCD04421D22C}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="1036"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{898F005A-77B3-42F4-A150-0D8F3BA23660}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{00E1BC7B-B99C-4164-91A8-5FAE44B46B01}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FileName]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1036"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CallTimestamp"
+              DTS:DTSID="{78FB30EF-3FED-45E8-9D8E-BBEE29AACC7F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Call Type"
+              DTS:DTSID="{34E90030-F234-4A47-B2DC-AB0ED4A1A182}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmployeeID"
+              DTS:DTSID="{9FEA5EB4-D334-48D6-BDA9-BFCF956C09AF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CallDuration"
+              DTS:DTSID="{8D4472AF-1570-46F0-A115-73F8C061BF78}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WaitTime"
+              DTS:DTSID="{69B76F65-57A0-4E30-9782-4FABC62DA9D7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CallAbandoned"
+              DTS:DTSID="{E2BF3B5F-7719-4B25-84CB-54AFB4170833}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{99B9EF0A-876D-4539-AA79-33B78AEF0ECB}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Conteneur de boucles Foreach"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Conteneur de boucles Foreach"
+      DTS:DTSID="{305D05CA-71CB-41E5-A671-3F4865FC25AE}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Conteneur de boucles Foreach">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{AFCB9718-8340-4C8F-A7FC-C3E33B8C2FB2}"
+        DTS:ObjectName="{AFCB9718-8340-4C8F-A7FC-C3E33B8C2FB2}">
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="D:\Users\Dash\Hexagone IT 3\BI ETL\proproprojeject\Data\Calls data" />
+            <FEFEProperty
+              FileSpec="*.*" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Conteneur de boucles Foreach\DFT - STA Calls"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Tâche de flux de données"
+          DTS:DTSID="{1FE8F1BC-D897-443F-BF99-41F17F4B9A61}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DFT - STA Calls"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+                  description="Source du fichier plat"
+                  localeId="1036"
+                  name="FF_SRC - Data STA Calls"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Spécifie si les colonnes dont la longueur est zéro sont traitées comme des valeurs NULL."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie le nom d'une colonne de sortie contenant le nom du fichier. Si aucun nom n'est spécifié, aucune colonne de sortie contenant le nom du fichier ne sera générée."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat]"
+                      name="Sortie de source de fichier plat">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallTimestamp]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallTimestamp]"
+                          length="50"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallTimestamp]"
+                          name="CallTimestamp"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[Call Type]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[Call Type]"
+                          length="50"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[Call Type]"
+                          name="Call Type"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[EmployeeID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[EmployeeID]"
+                          length="50"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[EmployeeID]"
+                          name="EmployeeID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallDuration]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallDuration]"
+                          length="50"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallDuration]"
+                          name="CallDuration"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[WaitTime]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[WaitTime]"
+                          length="50"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[WaitTime]"
+                          name="WaitTime"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallAbandoned]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallAbandoned]"
+                          length="50"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallAbandoned]"
+                          name="CallAbandoned"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallTimestamp]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CallTimestamp" />
+                        <externalMetadataColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[Call Type]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Call Type" />
+                        <externalMetadataColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[EmployeeID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="EmployeeID" />
+                        <externalMetadataColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallDuration]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CallDuration" />
+                        <externalMetadataColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[WaitTime]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="WaitTime" />
+                        <externalMetadataColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].ExternalColumns[CallAbandoned]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CallAbandoned" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie d'erreur de source de fichier plat]"
+                      isErrorOut="true"
+                      name="Sortie d'erreur de source de fichier plat">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                          codePage="65001"
+                          dataType="text"
+                          description="Colonne de sortie d'erreur de source de fichier plat"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                          name="Colonne de sortie d'erreur de source de fichier plat" />
+                        <outputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="Destination OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;4"
+                  description="Destination OLE DB"
+                  name="OLE_DST - STA Calls"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Nombre de secondes avant l'expiration d'une commande.  Une valeur égale à 0 indique un délai d'expiration infini."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                      name="OpenRowset">[Calls]</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="Commande SQL à exécuter."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie la page de codes de la colonne à utiliser lorsque les informations de page de codes ne sont pas disponibles à partir de la source de données."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Force l'utilisation de la valeur de propriété DefaultCodePage lors de la description des données caractères."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie le mode utilisé pour accéder à la base de données."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indique si les valeurs fournies pour les colonnes d'identité seront copiées à la destination. Si la valeur est définie à False, les valeurs des colonnes d'identité seront générées automatiquement à la destination. Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indique si les colonnes contenant la valeur NULL auront cette valeur NULL copiée à la destination. Si la valeur est définie à False, les colonnes contenant la valeur NULL auront leurs valeurs par défaut insérées à la destination. Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie les options à utiliser avec le chargement rapide.  Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadOptions"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie quand les validations sont émises pendant l'insertion des données.  Une valeur égale à 0 spécifie qu'une validation sera émise à la fin de l'insertion des données.  Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Connections[OleDbConnection]"
+                      connectionManagerID="{28CDF545-3E6F-4ABC-A815-B19689004B06}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[STA_SHEEEESH]"
+                      description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB]"
+                      errorOrTruncationOperation="Insérer"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="Entrée de destination OLE DB">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].Columns[CallTimestamp]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CallTimestamp"
+                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallTimestamp]"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallTimestamp]" />
+                        <inputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].Columns[Call Type]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Call Type"
+                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[Call Type]"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[Call Type]" />
+                        <inputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].Columns[EmployeeID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="EmployeeID"
+                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[EmployeeID]"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[EmployeeID]" />
+                        <inputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].Columns[CallDuration]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CallDuration"
+                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallDuration]"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallDuration]" />
+                        <inputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].Columns[WaitTime]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="WaitTime"
+                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[WaitTime]"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[WaitTime]" />
+                        <inputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].Columns[CallAbandoned]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CallAbandoned"
+                          externalMetadataColumnId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallAbandoned]"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat].Columns[CallAbandoned]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallTimestamp]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CallTimestamp" />
+                        <externalMetadataColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[Call Type]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Call Type" />
+                        <externalMetadataColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[EmployeeID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="EmployeeID" />
+                        <externalMetadataColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallDuration]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CallDuration" />
+                        <externalMetadataColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[WaitTime]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="WaitTime" />
+                        <externalMetadataColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB].ExternalColumns[CallAbandoned]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CallAbandoned" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Outputs[Sortie d'erreur de destination OLE DB]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Sortie d'erreur de destination OLE DB"
+                      synchronousInputId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Conteneur de boucles Foreach\DFT - STA Calls.Paths[Sortie de source de fichier plat]"
+                  endId="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls.Inputs[Entrée de destination OLE DB]"
+                  name="Sortie de source de fichier plat"
+                  startId="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls.Outputs[Sortie de source de fichier plat]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{BB6CEE29-687A-427C-A736-15B06CC797D9}"
+          DTS:ObjectName="{BB6CEE29-687A-427C-A736-15B06CC797D9}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::FileName" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Conteneur de boucles Foreach\DFT - STA Calls"
+          TopLeft="51,35.5" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="286,134"
+          Size="286,177"
+          Id="Package\Conteneur de boucles Foreach"
+          TopLeft="494,162" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Conteneur de boucles Foreach\DFT - STA Calls">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="206,42"
+          Id="Package\Conteneur de boucles Foreach\DFT - STA Calls\FF_SRC - Data STA Calls"
+          TopLeft="224,121" />
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls"
+          TopLeft="232,281" />
+        <EdgeLayout
+          Id="Package\Conteneur de boucles Foreach\DFT - STA Calls.Paths[Sortie de source de fichier plat]"
+          TopLeft="326.25,163">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,118"
+              Start="0,0"
+              End="0,110.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,110.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Conteneur de boucles Foreach\DFT - STA Calls\OLE_DST - STA Calls">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

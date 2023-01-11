@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{9C1CAFA2-E93D-4B26-A1C0-7C67DF9C10AA}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{5DE267D8-8755-4439-81F7-F845F91AD2C1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -21,8 +21,6 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{21BB68BF-94F2-4B9C-96FB-B0164C3573DA}"
       DTS:ObjectName="Flat File Connection Manager">
-      <DTS:PropertyExpression
-        DTS:Name="ConnectionString">REPLACE(@[$Project::Calls_Data_Path], SUBSTRING( @[$Project::Calls_Data_Path] , FINDSTRING(@[$Project::Calls_Data_Path] , "\\", TOKENCOUNT( @[$Project::Calls_Data_Path], "\\" ) - 1  ) , 15 ), "") + "\\Call types.csv"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -41,7 +39,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CallTypeID"
-              DTS:DTSID="{97932283-5C79-4643-A0E2-44131690054C}"
+              DTS:DTSID="{A5E99802-9A1B-4220-8B71-A389BD508D2A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -50,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CallTypeLabel"
-              DTS:DTSID="{9D4770B4-2A5A-4B1C-9E4A-AFFEC46E457A}"
+              DTS:DTSID="{70D5D7A3-8AF9-404F-B78F-C151B003E9F9}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>

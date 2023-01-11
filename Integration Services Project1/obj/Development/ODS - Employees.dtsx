@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="1/5/2023 12:36:04 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="105"
-  DTS:VersionGUID="{4FD0A8DA-981A-4456-9E54-A7AB564C7E11}">
+  DTS:VersionBuild="100"
+  DTS:VersionGUID="{DF0584AA-1008-4C85-B9F4-370AC2EDB587}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -110,7 +110,7 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="FirstName"
-                      lineageId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Outputs[Sortie de colonne dérivée].Columns[FirstName]">
+                      lineageId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Outputs[Sortie de colonne dérivée].Columns[FirstName]">
                       <properties>
                         <property
                           containsID="true"
@@ -125,7 +125,7 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="LastName"
-                      lineageId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Outputs[Sortie de colonne dérivée].Columns[LastName]">
+                      lineageId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Outputs[Sortie de colonne dérivée].Columns[LastName]">
                       <properties>
                         <property
                           containsID="true"
@@ -268,7 +268,7 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="FirstName"
-                      lineageId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Outputs[Sortie de colonne dérivée].Columns[FirstName]">
+                      lineageId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Outputs[Sortie de colonne dérivée].Columns[FirstName]">
                       <properties>
                         <property
                           containsID="true"
@@ -283,7 +283,7 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="LastName"
-                      lineageId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Outputs[Sortie de colonne dérivée].Columns[LastName]">
+                      lineageId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Outputs[Sortie de colonne dérivée].Columns[LastName]">
                       <properties>
                         <property
                           containsID="true"
@@ -1175,20 +1175,20 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load ODS Employees\DER - Slicing FirstName"
+              refId="Package\DFT - Load ODS Employees\DER - Sliting FirstName"
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Colonne dérivée;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;0"
               description="Crée de nouvelles valeurs de colonne en appliquant des expressions aux colonnes d'entrée de transformation. Créez de nouvelles colonnes ou remplacez celles qui existent déjà. Par exemple, concaténez les valeurs de la colonne 'prénom' et de la colonne 'nom' pour créer une colonne 'nom complet'."
-              name="DER - Slicing FirstName"
+              name="DER - Sliting FirstName"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Inputs[Entrée de colonne dérivée]"
+                  refId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Inputs[Entrée de colonne dérivée]"
                   description="Entrée de la transformation de colonnes dérivées"
                   name="Entrée de colonne dérivée">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Inputs[Entrée de colonne dérivée].Columns[EmployeeName]"
+                      refId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Inputs[Entrée de colonne dérivée].Columns[EmployeeName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -1200,20 +1200,20 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Outputs[Sortie de colonne dérivée]"
+                  refId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Outputs[Sortie de colonne dérivée]"
                   description="Sortie par défaut de la transformation de colonnes dérivées"
                   exclusionGroup="1"
                   name="Sortie de colonne dérivée"
-                  synchronousInputId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Inputs[Entrée de colonne dérivée]">
+                  synchronousInputId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Inputs[Entrée de colonne dérivée]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Outputs[Sortie de colonne dérivée].Columns[FirstName]"
+                      refId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Outputs[Sortie de colonne dérivée].Columns[FirstName]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Calcul"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Outputs[Sortie de colonne dérivée].Columns[FirstName]"
+                      lineageId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Outputs[Sortie de colonne dérivée].Columns[FirstName]"
                       name="FirstName"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1234,23 +1234,23 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Outputs[Sortie d'erreur de colonne dérivée]"
+                  refId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Outputs[Sortie d'erreur de colonne dérivée]"
                   description="Sortie d'erreur de la transformation de colonnes dérivées"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Sortie d'erreur de colonne dérivée"
-                  synchronousInputId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Inputs[Entrée de colonne dérivée]">
+                  synchronousInputId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Inputs[Entrée de colonne dérivée]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorCode]"
+                      refId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1259,20 +1259,20 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load ODS Employees\DER - Slicing LastName"
+              refId="Package\DFT - Load ODS Employees\DER - Sliting LastName"
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Colonne dérivée;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;0"
               description="Crée de nouvelles valeurs de colonne en appliquant des expressions aux colonnes d'entrée de transformation. Créez de nouvelles colonnes ou remplacez celles qui existent déjà. Par exemple, concaténez les valeurs de la colonne 'prénom' et de la colonne 'nom' pour créer une colonne 'nom complet'."
-              name="DER - Slicing LastName"
+              name="DER - Sliting LastName"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Inputs[Entrée de colonne dérivée]"
+                  refId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Inputs[Entrée de colonne dérivée]"
                   description="Entrée de la transformation de colonnes dérivées"
                   name="Entrée de colonne dérivée">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Inputs[Entrée de colonne dérivée].Columns[EmployeeName]"
+                      refId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Inputs[Entrée de colonne dérivée].Columns[EmployeeName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -1284,20 +1284,20 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Outputs[Sortie de colonne dérivée]"
+                  refId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Outputs[Sortie de colonne dérivée]"
                   description="Sortie par défaut de la transformation de colonnes dérivées"
                   exclusionGroup="1"
                   name="Sortie de colonne dérivée"
-                  synchronousInputId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Inputs[Entrée de colonne dérivée]">
+                  synchronousInputId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Inputs[Entrée de colonne dérivée]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Outputs[Sortie de colonne dérivée].Columns[LastName]"
+                      refId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Outputs[Sortie de colonne dérivée].Columns[LastName]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Calcul"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Outputs[Sortie de colonne dérivée].Columns[LastName]"
+                      lineageId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Outputs[Sortie de colonne dérivée].Columns[LastName]"
                       name="LastName"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1318,23 +1318,23 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Outputs[Sortie d'erreur de colonne dérivée]"
+                  refId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Outputs[Sortie d'erreur de colonne dérivée]"
                   description="Sortie d'erreur de la transformation de colonnes dérivées"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Sortie d'erreur de colonne dérivée"
-                  synchronousInputId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Inputs[Entrée de colonne dérivée]">
+                  synchronousInputId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Inputs[Entrée de colonne dérivée]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorCode]"
+                      refId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1855,7 +1855,7 @@ where [refTable].[StateCD] = ?</property>
                     <inputColumn
                       refId="Package\DFT - Load ODS Employees\OLE_DST - Technical_Rejects.Inputs[Entrée de destination OLE DB].Columns[RejectMessage]"
                       cachedDataType="wstr"
-                      cachedLength="264"
+                      cachedLength="469"
                       cachedName="RejectMessage"
                       externalMetadataColumnId="Package\DFT - Load ODS Employees\OLE_DST - Technical_Rejects.Inputs[Entrée de destination OLE DB].ExternalColumns[RejectMessage]"
                       lineageId="Package\DFT - Load ODS Employees\DER - Reject StateCODE.Outputs[Sortie de colonne dérivée].Columns[RejectMessage]" />
@@ -2124,14 +2124,14 @@ where [refTable].[StateCD] = ?</property>
               startId="Package\DFT - Load ODS Employees\DER - Error StateCODE.Outputs[Sortie de colonne dérivée]" />
             <path
               refId="Package\DFT - Load ODS Employees.Paths[Sortie de colonne dérivée4]"
-              endId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Inputs[Entrée de colonne dérivée]"
+              endId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Inputs[Entrée de colonne dérivée]"
               name="Sortie de colonne dérivée"
-              startId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Outputs[Sortie de colonne dérivée]" />
+              startId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Outputs[Sortie de colonne dérivée]" />
             <path
               refId="Package\DFT - Load ODS Employees.Paths[Sortie de colonne dérivée5]"
               endId="Package\DFT - Load ODS Employees\DER - Divide State from Site.Inputs[Entrée de colonne dérivée]"
               name="Sortie de colonne dérivée"
-              startId="Package\DFT - Load ODS Employees\DER - Slicing LastName.Outputs[Sortie de colonne dérivée]" />
+              startId="Package\DFT - Load ODS Employees\DER - Sliting LastName.Outputs[Sortie de colonne dérivée]" />
             <path
               refId="Package\DFT - Load ODS Employees.Paths[Sortie de conversion de données]"
               endId="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees.Inputs[Entrée de destination OLE DB]"
@@ -2154,7 +2154,7 @@ where [refTable].[StateCD] = ?</property>
               startId="Package\DFT - Load ODS Employees\LKP - Bind State with StateName &amp; Region.Outputs[Sortie de recherche sans correspondance]" />
             <path
               refId="Package\DFT - Load ODS Employees.Paths[Sortie de source OLE DB]"
-              endId="Package\DFT - Load ODS Employees\DER - Slicing FirstName.Inputs[Entrée de colonne dérivée]"
+              endId="Package\DFT - Load ODS Employees\DER - Sliting FirstName.Inputs[Entrée de colonne dérivée]"
               name="Sortie de source OLE DB"
               startId="Package\DFT - Load ODS Employees\OLE_SRC - Load STA Employees.Outputs[Sortie de source OLE DB]" />
             <path
@@ -2253,8 +2253,8 @@ where [refTable].[StateCD] = ?</property>
           Id="Package\DFT - Load ODS Employees\DER - Divide State from Site"
           TopLeft="560,249" />
         <NodeLayout
-          Size="198,42"
-          Id="Package\DFT - Load ODS Employees\DER - Slicing FirstName"
+          Size="196,42"
+          Id="Package\DFT - Load ODS Employees\DER - Sliting FirstName"
           TopLeft="573,93" />
         <NodeLayout
           Size="211,42"
@@ -2273,8 +2273,8 @@ where [refTable].[StateCD] = ?</property>
           Id="Package\DFT - Load ODS Employees\OLE_DST - ODS Employees"
           TopLeft="560,725" />
         <NodeLayout
-          Size="197,42"
-          Id="Package\DFT - Load ODS Employees\DER - Slicing LastName"
+          Size="195,42"
+          Id="Package\DFT - Load ODS Employees\DER - Sliting LastName"
           TopLeft="575,170" />
         <NodeLayout
           Size="229,42"
@@ -2295,7 +2295,7 @@ where [refTable].[StateCD] = ?</property>
         <NodeLayout
           Size="228,42"
           Id="Package\DFT - Load ODS Employees\MLT - State and City Unknown"
-          TopLeft="923,541" />
+          TopLeft="925,551" />
         <EdgeLayout
           Id="Package\DFT - Load ODS Employees.Paths[Sortie de recherche sans correspondance]"
           TopLeft="820,436">
@@ -2344,7 +2344,7 @@ where [refTable].[StateCD] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load ODS Employees.Paths[Sortie de colonne dérivée5]"
-          TopLeft="671.25,212">
+          TopLeft="670.75,212">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2366,7 +2366,7 @@ where [refTable].[StateCD] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load ODS Employees.Paths[Sortie de colonne dérivée4]"
-          TopLeft="672.75,135">
+          TopLeft="671.75,135">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2388,18 +2388,18 @@ where [refTable].[StateCD] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load ODS Employees.Paths[Sortie de colonne dérivée3]"
-          TopLeft="1036.75,457">
+          TopLeft="1037.75,457">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,84"
+              EndConnector="0,94"
               Start="0,0"
-              End="0,76.5">
+              End="0,86.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,76.5" />
+                    End="0,86.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2476,18 +2476,18 @@ where [refTable].[StateCD] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load ODS Employees.Paths[Multidiffusion sortie 1]"
-          TopLeft="1035.75,583">
+          TopLeft="1036.75,593">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46"
+              EndConnector="0,36"
               Start="0,0"
-              End="0,38.5">
+              End="0,28.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.5" />
+                    End="0,28.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2498,7 +2498,7 @@ where [refTable].[StateCD] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load ODS Employees.Paths[Sortie de source OLE DB]"
-          TopLeft="671.5,56">
+          TopLeft="671,56">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2566,18 +2566,30 @@ where [refTable].[StateCD] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load ODS Employees.Paths[Sortie de multidiffusion 2]"
-          TopLeft="923,561">
+          TopLeft="925,572">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-148,0"
+              EndConnector="-150,-12"
               Start="0,0"
-              End="-140.5,0">
+              End="-142.5,-12">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-140.5,0" />
+                    End="-71,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-71,0"
+                    Point2="-75,0"
+                    Point3="-75,-4" />
+                  <mssgle:LineSegment
+                    End="-75,-8" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-75,-8"
+                    Point2="-75,-12"
+                    Point3="-79,-12" />
+                  <mssgle:LineSegment
+                    End="-142.5,-12" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
