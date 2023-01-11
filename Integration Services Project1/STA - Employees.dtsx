@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{E41DBEA5-DB43-43C1-8632-F08A57ACAD76}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{0514625E-C4AD-46B7-A7EF-30F6B16562CD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -33,6 +33,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{E5430526-25AA-49CC-BE10-C4ADC5AAE945}"
       DTS:ObjectName="Flat File Connection Manager">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">REPLACE(@[$Project::Calls_Data_Path], SUBSTRING( @[$Project::Calls_Data_Path] , FINDSTRING(@[$Project::Calls_Data_Path] , "\\", TOKENCOUNT( @[$Project::Calls_Data_Path], "\\" ) - 1  ) , 15 ), "") + "\\Emp.csv"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
