@@ -14,5 +14,5 @@ Bien garder absolument la structure de <br>
 Avec les bons noms de fichier ! /!\\  <br>
 Mettre à jour le project.params avec le chemin local du dossier Data/Calls data<br>
 TOUS LES CHEMINS DE FICHIERS STA VONT SE FAIRE AUTOMATIQUEMENT <br>
-Les file connections sont automatiquement générés avec la variable du project contenant Data/Calls data <br>
+Les file connections sont automatiquement générées grâce à la variable du project contenant le path de Data/Calls data <br>
 Lancer le Scheduler.dtsx
